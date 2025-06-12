@@ -1,14 +1,18 @@
-Grafana URL http://localhost:3001/
-Prometheus URL http://localhost:9090/
+# Monitoring URLs
 
-#Metrics to watch
-#Rails app:
+- **Grafana URL:** http://localhost:3001/
+- **Prometheus URL:** http://localhost:9090/
+
+# Metrics to Watch
+
+## Rails app:
 - Request latency (histogram)
 - Request count (success vs error)
 - Database query duration
 - Redis cache hits/misses
 - Error rates
-#Postgres:
+
+## Postgres:
 - Connection count (active vs idle)
 - Cache hit ratio
 - Slow queries count / duration
@@ -16,10 +20,12 @@ Prometheus URL http://localhost:9090/
 - Replication lag (if applicable)
 - Checkpoints (count, duration)
 - Disk usage
-#Redis:
+
+## Redis:
 - Memory usage
 - Evicted keys count
 - Hits vs misses
 - Connected clients
 - Command processing latency
 - CPU usage
+
